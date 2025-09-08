@@ -1,0 +1,366 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Ryzz Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Scroll animation */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.8s ease-out;
+    }
+    [data-animate].animate {
+      opacity: 2;
+      transform: translateY(0);
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-300 min-h-screen flex flex-col">
+  <header class="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 shadow-md">
+   <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-indigo-500 tracking-wide" href="#home">
+     MyPortfolio
+    </a>
+    <ul class="hidden md:flex space-x-8 text-gray-400 font-medium">
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-500 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden text-gray-400 hover:text-indigo-500 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </nav>
+   <div class="hidden md:hidden bg-gray-800 bg-opacity-95" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 px-6 py-6 text-gray-400 font-medium">
+     <li>
+      <a class="block hover:text-indigo-500 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-500 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-500 transition" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-500 transition" href="#skills">
+       Skills
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-500 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="flex-grow pt-20">
+   <!-- Home Section -->
+   <section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12" id="home">
+    <div class="flex-1 text-center md:text-left" data-animate="">
+     <h1 class="text-5xl font-extrabold text-indigo-500 mb-4 leading-tight">
+      Hi, I'm
+      <span class="text-gray-100">
+       Ahmad Rizky Kurniawan
+      </span>
+     </h1>
+     <p class="text-gray-400 text-lg max-w-xl mb-8">
+      A passionate Frontend Developer crafting modern and elegant web experiences.
+     </p>
+     <a class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition" href="#contact">
+      Contact Me
+     </a>
+    </div>
+    <div class="flex-1 max-w-sm mx-auto md:mx-0" data-animate="">
+     <img alt="Portrait of a young developer in dark modern style, wearing casual clothes with a confident smile, digital art style" class="rounded-full shadow-lg border-4 border-indigo-600" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b6b5f508-4862-4782-4a48-532fd5315ccd.jpg" width="400"/>
+    </div>
+   </section>
+   <!-- About Section -->
+   <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-800" id="about">
+    <h2 class="text-4xl font-bold text-indigo-500 mb-8 text-center" data-animate="">
+     About Me
+    </h2>
+    <div class="max-w-4xl mx-auto text-gray-400 text-lg leading-relaxed" data-animate="">
+     <p>
+      I am a dedicated web developer with over 2 years of experience in building sleek, responsive, and user-friendly websites. My expertise lies in modern frontend technologies such as React, Tailwind CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+     </p>
+     <p class="mt-4">
+      When I’m not coding, I love exploring new design trends, contributing to open source projects, and improving my skills through continuous learning.
+     </p>
+    </div>
+   </section>
+   <!-- Projects Section -->
+   <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-800" id="projects">
+    <h2 class="text-4xl font-bold text-indigo-500 mb-12 text-center" data-animate="">
+     Projects
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+     <article class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-600 transition-shadow duration-300" data-animate="">
+      <img alt="Screenshot of a modern dark-themed dashboard UI with charts and statistics, digital design" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8a76cb3a-6943-49e1-0460-9cd8f74c6292.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Dashboard UI
+       </h3>
+       <p class="text-gray-400 mb-4">
+        A sleek and responsive dashboard interface built with React and Tailwind CSS.
+       </p>
+       <a class="text-indigo-500 hover:text-indigo-400 font-semibold inline-flex items-center" href="#">
+        View Project
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-600 transition-shadow duration-300" data-animate="">
+      <img alt="Screenshot of a modern e-commerce website homepage in dark mode with product listings and navigation" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/808409a6-048f-4d72-e07c-4f5008a2cb6a.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        E-commerce Website
+       </h3>
+       <p class="text-gray-400 mb-4">
+        A fully responsive e-commerce platform with dark mode support and smooth animations.
+       </p>
+       <a class="text-indigo-500 hover:text-indigo-400 font-semibold inline-flex items-center" href="#">
+        View Project
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-600 transition-shadow duration-300" data-animate="">
+      <img alt="Screenshot of a personal portfolio website homepage in dark theme with profile and project highlights" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f688c855-8443-4dfd-19f8-69c45f414b0f.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Portfolio Website
+       </h3>
+       <p class="text-gray-400 mb-4">
+        A modern portfolio website showcasing projects and skills with smooth scroll animations.
+       </p>
+       <a class="text-indigo-500 hover:text-indigo-400 font-semibold inline-flex items-center" href="#">
+        View Project
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-600 transition-shadow duration-300" data-animate="">
+      <img alt="Screenshot of a blog platform homepage with dark UI, featuring posts and categories" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a30c396f-e0ee-46a9-cea9-7ff9d56b9295.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Blog Platform
+       </h3>
+       <p class="text-gray-400 mb-4">
+        A clean and minimal blog platform with dark UI and easy content management.
+       </p>
+       <a class="text-indigo-500 hover:text-indigo-400 font-semibold inline-flex items-center" href="#">
+        View Project
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-600 transition-shadow duration-300" data-animate="">
+      <img alt="Screenshot of a mobile app landing page in dark theme with call to action and app screenshots" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3e64fe73-f395-4949-0e24-ae95780ab97b.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Mobile App Landing
+       </h3>
+       <p class="text-gray-400 mb-4">
+        A captivating landing page for a mobile app with dark theme and smooth scroll animations.
+       </p>
+       <a class="text-indigo-500 hover:text-indigo-400 font-semibold inline-flex items-center" href="#">
+        View Project
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-600 transition-shadow duration-300" data-animate="">
+      <img alt="Screenshot of an admin panel dashboard in dark mode with charts and user management" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/31a48e0e-4062-4c51-ed26-5a8882fedbf2.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Admin Panel
+       </h3>
+       <p class="text-gray-400 mb-4">
+        A powerful admin panel with dark dashboard UI and real-time data visualization.
+       </p>
+       <a class="text-indigo-500 hover:text-indigo-400 font-semibold inline-flex items-center" href="#">
+        View Project
+        <i class="fas fa-arrow-right ml-2">
+        </i>
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Skills Section -->
+   <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-800" id="skills">
+    <h2 class="text-4xl font-bold text-indigo-500 mb-12 text-center" data-animate="">
+     Skills
+    </h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 text-center">
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fab fa-html5 text-6xl text-orange-600">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       HTML5
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fab fa-css3-alt text-6xl text-blue-600">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       CSS3
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fab fa-js-square text-6xl text-yellow-400">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       JavaScript
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fab fa-react text-6xl text-cyan-400">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       React
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fab fa-node-js text-6xl text-green-500">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       Node.js
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fas fa-database text-6xl text-indigo-500">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       Databases
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fab fa-git-alt text-6xl text-red-600">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       Git
+      </span>
+     </div>
+     <div class="flex flex-col items-center space-y-3" data-animate="">
+      <i class="fas fa-mobile-alt text-6xl text-pink-500">
+      </i>
+      <span class="text-gray-300 font-semibold">
+       Responsive Design
+      </span>
+     </div>
+    </div>
+   </section>
+   <!-- Contact Section -->
+   <section class="max-w-7xl mx-auto px-6 py-20 border-t border-gray-800" id="contact">
+    <h2 class="text-4xl font-bold text-indigo-500 mb-12 text-center" data-animate="">
+     Contact Me
+    </h2>
+    <form action="#" class="max-w-3xl mx-auto bg-gray-800 rounded-lg p-8 shadow-lg" data-animate="" method="POST">
+     <div class="mb-6">
+      <label class="block mb-2 text-gray-300 font-semibold" for="name">
+       Name
+      </label>
+      <input class="w-full px-4 py-3 rounded-md bg-gray-700 text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2 text-gray-300 font-semibold" for="email">
+       Email
+      </label>
+      <input class="w-full px-4 py-3 rounded-md bg-gray-700 text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2 text-gray-300 font-semibold" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-4 py-3 rounded-md bg-gray-700 text-gray-200 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg shadow-lg transition" type="submit">
+      Send Message
+      <sent ="rizkykrnwn122@gmail.com"
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-gray-900 border-t border-gray-800 py-8 mt-20">
+   <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+    © 2025 Ryzz Port. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll animation
+    const animatedElements = document.querySelectorAll('[data-animate]');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    animatedElements.forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+ </body>
+</html>
