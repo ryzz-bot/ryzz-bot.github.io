@@ -1,0 +1,225 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Biodata - Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Animate fade-in and slide-up for sections */
+    .fade-slide {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-slide.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
+  <header class="sticky top-0 bg-gray-900 z-50 shadow-md">
+   <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a class="text-2xl font-bold text-indigo-400 hover:text-indigo-500 transition" href="#home">
+     Ryzz
+    </a>
+    <ul class="flex space-x-6 text-gray-300 font-medium text-lg">
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#profile">
+       Profile
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#skills">
+       Skills
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-12 space-y-24">
+   <!-- Home Section -->
+   <section class="fade-slide flex flex-col items-center text-center" id="home" tabindex="0">
+    <img alt="Cartoon portrait of Ahmad Rizky Kurniawan with friendly smile and casual clothes, framed in a circular border" class="w-48 h-48 rounded-full border-4 border-indigo-500 shadow-lg mb-8 object-cover" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/879e2b62-fecd-44cd-2f3d-ca4577d51cdc.jpg" width="200"/>
+    <h1 class="text-4xl font-extrabold text-indigo-400">
+     Ahmad Rizky Kurniawan
+    </h1>
+   </section>
+   <!-- About Section -->
+   <section class="fade-slide max-w-3xl mx-auto prose prose-invert prose-indigo" id="about" tabindex="0">
+    <h2 class="text-3xl font-bold mb-6 border-b border-indigo-600 pb-2">
+     About
+    </h2>
+    <p>
+     Hello My Friend and My Girl, Disini saya memperkenalkan hasil dari website yang telah saya buat selama 1 minggu dengan menggunakan konsep dasar HTML dan CSS. Maaf jika website ini terlihat kurang menarik, dikarenakan masih pemula belum profesional, ingat 1 dasar CSS saja sudah alhamdulillah.
+    </p>
+    <p>
+     Saya ingin mengingatkan kepada teman teman, bahwasanya saya bukan seorang hacking/hacker. Jadi, jangan mentang mentang saya mempelajari ilmu programmer, atau semua yang ada di ilmu komputer iti adalah seorang hacker.
+    </p>
+    <p>
+     Programmer juga ada dua profesi, yang pertama programmer bekerja seperti membuat website, dan programmer anonymous seperti hacker/hacking. Ingatt ne man man.
+    </p>
+    <p>
+      Sebenarnya saya tidak punya bakat di bidang per komputer-an, dan tidak memiliki skills di bidang per coding-an, dan saya tidak punya niat untuk mempelajar semua itu.
+    </p>
+    <p>
+      Bidang saya di olahraga, seperti di beladiri Karate, Taekwondo, Shadow Boxing, dll. Tetapi lebih ke Karate, alhamdulillah sudah mencatatkan nama di Kejuaraan Nasional dan International, walaupun yang International masih di negara sendiri wkkk.
+    </p>
+   </section>
+   <!-- Profile Section -->
+   <section class="fade-slide max-w-3xl mx-auto prose prose-invert prose-indigo" id="profile" tabindex="0">
+    <h2 class="text-3xl font-bold mb-6 border-b border-indigo-600 pb-2">
+     Profile
+    </h2>
+    <ul class="list-disc list-inside space-y-2 text-lg">
+     <li>
+      <span class="font-semibold">
+       Kelas:
+      </span>
+      XII.A
+     </li>
+     <li>
+      <span class="font-semibold">
+       Hobi:
+      </span>
+      Jogging, Sprint, Coding, Ngedit
+     </li>
+     <li>
+      <span class="font-semibold">
+       Sekolah:
+      </span>
+      SMAN 1 Muara Pinang
+     </li>
+      
+    </ul>
+   </section>
+   <!-- Skills Section -->
+   <section class="fade-slide max-w-4xl mx-auto" id="skills" tabindex="0">
+    <h2 class="text-3xl font-bold mb-8 border-b border-indigo-600 pb-2 text-indigo-400">
+     Skills
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="HTML5 logo icon in orange and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/81f29455-872e-407e-260a-0626d9b810b7.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       HTML
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="CSS3 logo icon in blue and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c284230f-ff9d-44f2-0198-5052cba8d66b.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       CSS
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="PHP logo icon in purple and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4482605b-ddbb-40a5-55ce-08f9af35419e.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       PHP
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="JavaScript logo icon in yellow and black colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3f4d949b-db7f-4628-b825-a6913f8b69aa.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       Javascript
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="Laravel logo icon in red and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/42b4e376-cbbf-40a1-3d81-338455d52314.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       Laravel
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="CodeIgniter logo icon in red and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a7fafe5f-2bb7-4f47-a7a1-df2cf2e395c1.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       Codeigniter
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="VueJS logo icon in green and dark colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/01616394-726c-4c69-945a-91fb333451ef.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       VueJS
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="AlpineJS logo icon in blue and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cf71a802-c8e9-4f19-39cf-bd39af66d8b3.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       AlpineJS
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="NodeJS logo icon in green and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f878e70c-d47d-4851-a46e-bc543c7918e8.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       NodeJS
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="Tailwind CSS logo icon in teal and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c97963a8-072d-4452-5c7f-679d97f8d99f.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       Tailwind
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="Bootstrap logo icon in purple and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0f10d2b0-864c-4ebd-19ca-e61a543eade4.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       Bootstrap
+      </span>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-md hover:scale-105 transform transition duration-300">
+      <img alt="ReactJS logo icon in blue and white colors" class="mb-3 w-16 h-16" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b0dfb429-53de-4938-5460-d0755f4536f1.jpg" width="64"/>
+      <span class="text-indigo-300 font-semibold">
+       ReactJS
+      </span>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-800 text-gray-400 text-center py-6 mt-12">
+   <p>
+    © 2025 Ahmad Rizky Kurniawan. Website ini jakdi aku, jadi jangan nak copyright
+   </p>
+  </footer>
+  <script>
+   // Intersection Observer for fade-slide animation on scroll
+    const faders = document.querySelectorAll('.fade-slide');
+    const options = {
+      threshold: 0.2,
+    };
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+ </body>
+</html>
